@@ -1,14 +1,22 @@
 # 黄子豪个人主页
 
-基于个人简历内容制作的静态个人主页，通过 GitHub Pages 发布。
+基于个人简历内容制作的静态学术主页，通过 GitHub Pages 发布。页面结构与交互参考 [Luka Homepage Template](https://github.com/wzsyyh/luka-homepage-template)，并保留模板署名。
 
 ## 本地预览
 
-直接在浏览器中打开 `index.html`，或在当前目录启动任意静态文件服务器。
+直接打开 `index.html`，或在当前目录启动任意静态文件服务器。
 
-## 内容结构
+## 当前内容
 
-- 教育背景与研究方向
+- 个人介绍、教育背景与研究方向
 - 科研、实习和项目经历
-- 技术能力与主要荣誉
-- 邮箱与 GitHub 联系方式
+- 技术能力、论文占位与主要荣誉
+- 邮箱和 GitHub 联系方式
+
+## 待补充资料
+
+- 脱敏后的公开版简历 PDF
+- Google Scholar、LinkedIn 与个人博客链接
+- 个人署名论文的作者顺序、出版信息、PDF 与代码链接
+- Cyber Smash 仓库与掌间流明 Bilibili 视频链接
+- 山东省产业技术研究院 Logo 与访客地图代码
