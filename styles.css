@@ -255,6 +255,7 @@ svg {
 .profile-kicker,
 .entry-label,
 .project-index,
+.publication-index,
 .section-title span,
 .profile-stats dt {
   font-family: "IBM Plex Mono", monospace;
@@ -455,12 +456,11 @@ html.reveal-ready .section.visible {
 .institution-content h3,
 .entry-heading h3,
 .skill-row h3,
-.publication-placeholder h3 {
+.publication-item h3 {
   color: var(--text);
 }
 
 .inline-placeholder,
-.publication-placeholder,
 .section-note {
   color: var(--placeholder);
 }
@@ -503,7 +503,7 @@ html.reveal-ready .section.visible {
 .institution-content h3,
 .entry-heading h3,
 .skill-row h3,
-.publication-placeholder h3 {
+.publication-item h3 {
   margin: 0;
   letter-spacing: 0;
 }
@@ -701,29 +701,88 @@ html.reveal-ready .section.visible {
   font-size: 14px;
 }
 
-.publication-placeholder {
+.publication-list {
+  border-top: 1px solid var(--line);
+}
+
+.publication-item {
   display: grid;
-  grid-template-columns: 28px 1fr;
-  gap: 15px;
-  padding: 18px;
-  border: 1px dashed color-mix(in srgb, var(--placeholder) 52%, var(--line));
-  border-radius: 6px;
-  background: color-mix(in srgb, var(--placeholder) 5%, var(--surface));
+  grid-template-columns: 44px minmax(0, 1fr);
+  gap: 18px;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--line);
 }
 
-.publication-placeholder > svg {
-  width: 24px;
-  height: 24px;
+.publication-index {
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 600;
 }
 
-.publication-placeholder h3 {
-  font-size: 15px;
+.publication-content {
+  min-width: 0;
 }
 
-.publication-placeholder p {
-  margin-top: 4px;
-  color: var(--muted);
+.publication-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: start;
+}
+
+.publication-item h3 {
+  margin: 0;
+  color: var(--text);
+  font-size: 17px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.publication-status {
+  display: inline-flex;
+  align-items: center;
+  min-height: 27px;
+  padding: 5px 9px;
+  color: var(--green);
+  border: 1px solid color-mix(in srgb, var(--green) 42%, var(--line));
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--green) 8%, var(--surface));
+  font: 600 10px/1.3 "IBM Plex Mono", monospace;
+  white-space: nowrap;
+}
+
+.publication-authors {
+  margin-top: 10px !important;
+  color: var(--text);
   font-size: 13px;
+}
+
+.publication-venue {
+  color: var(--muted);
+  font: 500 11px/1.6 "IBM Plex Mono", monospace;
+  overflow-wrap: anywhere;
+}
+
+.publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 15px;
+  margin-top: 13px;
+}
+
+.publication-link-placeholder {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--placeholder);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.publication-link-placeholder svg {
+  flex: 0 0 auto;
+  width: 13px;
+  height: 13px;
 }
 
 .section-note {
@@ -876,6 +935,20 @@ html.reveal-ready .section.visible {
   .project-item {
     grid-template-columns: 32px 1fr;
     gap: 12px;
+  }
+
+  .publication-item {
+    grid-template-columns: 32px minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .publication-heading {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .publication-status {
+    justify-self: start;
   }
 
   .skill-row {
