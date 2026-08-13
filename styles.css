@@ -256,8 +256,7 @@ svg {
 .entry-label,
 .project-index,
 .publication-index,
-.section-title span,
-.profile-stats dt {
+.section-title span {
   font-family: "IBM Plex Mono", monospace;
 }
 
@@ -303,8 +302,7 @@ svg {
   margin-top: 19px;
 }
 
-.social-icons a,
-.social-placeholder {
+.social-icons a {
   display: inline-grid;
   place-items: center;
   width: 38px;
@@ -326,81 +324,9 @@ svg {
   transform: translateY(-2px);
 }
 
-.social-placeholder {
-  color: var(--muted);
-  border-style: dashed;
-  cursor: not-allowed;
-  opacity: 0.62;
-}
-
 .social-icons svg {
   width: 17px;
   height: 17px;
-}
-
-.profile-stats {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  margin: 26px 0 0;
-  padding: 18px 0;
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-}
-
-.profile-stats div {
-  min-width: 0;
-  padding: 0 7px;
-  border-right: 1px solid var(--line);
-}
-
-.profile-stats div:last-child {
-  border-right: 0;
-}
-
-.profile-stats dt {
-  overflow-wrap: anywhere;
-  color: var(--text);
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 1.35;
-}
-
-.profile-stats dd {
-  margin: 5px 0 0;
-  color: var(--muted);
-  font-size: 10px;
-  line-height: 1.4;
-}
-
-.missing-panel {
-  margin-top: 26px;
-  padding: 16px;
-  border: 1px dashed color-mix(in srgb, var(--placeholder) 52%, var(--line));
-  border-radius: 6px;
-  text-align: left;
-  background: color-mix(in srgb, var(--placeholder) 5%, var(--surface));
-}
-
-.missing-panel > p {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin: 0 0 8px;
-  color: var(--placeholder);
-  font-size: 12px;
-  font-weight: 700;
-}
-
-.missing-panel > p svg {
-  width: 15px;
-  height: 15px;
-}
-
-.missing-panel ul {
-  margin: 0;
-  padding-left: 18px;
-  color: var(--muted);
-  font-size: 11px;
 }
 
 .content {
@@ -455,7 +381,6 @@ html.reveal-ready .section.visible {
 .prose strong,
 .institution-content h3,
 .entry-heading h3,
-.skill-row h3,
 .publication-item h3 {
   color: var(--text);
 }
@@ -484,25 +409,13 @@ html.reveal-ready .section.visible {
 }
 
 .institution-entry {
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  gap: 24px;
-  align-items: start;
   padding: 22px 0;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
 
-.institution-logo-wide {
-  width: 138px;
-  height: 64px;
-  object-fit: contain;
-  object-position: left center;
-}
-
 .institution-content h3,
 .entry-heading h3,
-.skill-row h3,
 .publication-item h3 {
   margin: 0;
   letter-spacing: 0;
@@ -680,27 +593,6 @@ html.reveal-ready .section.visible {
   font-weight: 600;
 }
 
-.skill-groups {
-  border-top: 1px solid var(--line);
-}
-
-.skill-row {
-  display: grid;
-  grid-template-columns: 190px 1fr;
-  gap: 24px;
-  padding: 18px 0;
-  border-bottom: 1px solid var(--line);
-}
-
-.skill-row h3 {
-  font: 600 12px/1.5 "IBM Plex Mono", monospace;
-}
-
-.skill-row p {
-  color: var(--muted);
-  font-size: 14px;
-}
-
 .publication-list {
   border-top: 1px solid var(--line);
 }
@@ -855,18 +747,6 @@ html.reveal-ready .section.visible {
     margin: 0 auto;
   }
 
-  .profile-stats {
-    max-width: 440px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .missing-panel {
-    max-width: 440px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
   .content {
     width: 100%;
     margin-left: 0;
@@ -909,16 +789,6 @@ html.reveal-ready .section.visible {
     font-size: 20px;
   }
 
-  .institution-entry {
-    grid-template-columns: 1fr;
-    gap: 14px;
-  }
-
-  .institution-logo-wide {
-    width: 128px;
-    height: 50px;
-  }
-
   .entry-heading {
     flex-direction: column;
     gap: 6px;
@@ -951,23 +821,11 @@ html.reveal-ready .section.visible {
     justify-self: start;
   }
 
-  .skill-row {
-    grid-template-columns: 1fr;
-    gap: 5px;
-  }
 }
 
 @media (max-width: 420px) {
   .home-link > span:last-child {
     display: none;
-  }
-
-  .profile-stats dt {
-    font-size: 11px;
-  }
-
-  .profile-stats dd {
-    font-size: 9px;
   }
 
   .inline-placeholder {

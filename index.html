@@ -23,7 +23,7 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=20260814-portrait" />
+    <link rel="stylesheet" href="styles.css?v=20260814-cleanup" />
     <script>
       document.documentElement.dataset.theme = localStorage.getItem('theme') || 'light';
     </script>
@@ -58,7 +58,7 @@
       <header class="sidebar">
         <div class="profile-card">
           <div class="avatar-frame">
-            <img src="assets/portrait.jpg?v=20260814-portrait" alt="黄子豪照片" />
+            <img src="assets/portrait.jpg?v=20260814-cleanup" alt="黄子豪照片" />
           </div>
 
           <p class="profile-kicker">SOFTWARE ENGINEERING</p>
@@ -74,41 +74,7 @@
             <a href="https://github.com/worstwoof" target="_blank" rel="noreferrer" title="GitHub" aria-label="GitHub">
               <i data-lucide="github" aria-hidden="true"></i>
             </a>
-            <span class="social-placeholder" title="Google Scholar 待补充" aria-label="Google Scholar 待补充" aria-disabled="true">
-              <i data-lucide="graduation-cap" aria-hidden="true"></i>
-            </span>
-            <span class="social-placeholder" title="LinkedIn 待补充" aria-label="LinkedIn 待补充" aria-disabled="true">
-              <i data-lucide="linkedin" aria-hidden="true"></i>
-            </span>
-            <span class="social-placeholder" title="个人博客待补充" aria-label="个人博客待补充" aria-disabled="true">
-              <i data-lucide="rss" aria-hidden="true"></i>
-            </span>
           </div>
-
-          <dl class="profile-stats" aria-label="教育概况">
-            <div>
-              <dt>3.791/4</dt>
-              <dd>平均学分绩点</dd>
-            </div>
-            <div>
-              <dt>Top 6.3%</dt>
-              <dd>专业排名</dd>
-            </div>
-            <div>
-              <dt>2024-28</dt>
-              <dd>本科阶段</dd>
-            </div>
-          </dl>
-
-          <aside class="missing-panel" aria-labelledby="missing-title">
-            <p id="missing-title"><i data-lucide="clipboard-list" aria-hidden="true"></i> 待补充资料</p>
-            <ul>
-              <li>公开版简历 PDF</li>
-              <li>Google Scholar / LinkedIn / 博客</li>
-              <li>论文 PDF、DOI 与代码链接</li>
-              <li>访客地图代码</li>
-            </ul>
-          </aside>
         </div>
       </header>
 
@@ -120,7 +86,7 @@
               你好，我是<strong>黄子豪</strong>，南开大学软件工程专业本科生。我的兴趣集中在 AI Agent、跨架构软件构建修复、计算机视觉与交互系统，希望把研究问题落实为可运行、可验证的工程系统。
             </p>
             <p>
-              目前参与 ICSE 2027 Build-Bench Challenge 组织与基线建设，也持续开展 Agent Harness、自适应模型路由和视觉模型复现工作。
+              目前参与 ICSE 2027 Build-Bench Challenge 组织与基线建设，并在上海交通大学易冉副教授实验室开展科研实习。
             </p>
             <p>
               目前已有 <strong>3 篇论文被 Ubicomp/ISWC 2026 录用</strong>，其中两篇进入 Student Competition and Challenges track，另一篇进入 SEPH Workshop。
@@ -136,7 +102,6 @@
           <h2 class="section-title" id="education-title">教育背景 <span>Education</span></h2>
           <div class="section-body">
             <article class="institution-entry">
-              <img src="assets/nankai.png?v=20260810-luka" alt="南开大学校徽与校名" class="institution-logo institution-logo-wide" />
               <div class="institution-content">
                 <div class="entry-heading">
                   <div>
@@ -183,38 +148,6 @@
             <article class="timeline-item">
               <div class="entry-heading">
                 <div>
-                  <p class="entry-label">COMPUTER VISION</p>
-                  <h3>基于 Jittor 框架从零复现 RetinaNet</h3>
-                </div>
-                <time datetime="2025-02">2025.02 - 2025.08</time>
-              </div>
-              <p>
-                独立复现《Focal Loss for Dense Object Detection》，在 COCO 数据集上完整实现数据加载、模型构建、Focal Loss、训练流程与性能验证。
-              </p>
-              <div class="tag-list" aria-label="技术关键词">
-                <span>Jittor</span><span>COCO</span><span>RetinaNet</span><span>Focal Loss</span><span>FCOS</span><span>GFL</span>
-              </div>
-            </article>
-
-            <article class="timeline-item">
-              <div class="entry-heading">
-                <div>
-                  <p class="entry-label">AGENT SYSTEMS</p>
-                  <h3>Agent Harness 与自适应模型路由</h3>
-                </div>
-                <time datetime="2026-04">2026.04 - 2026.07</time>
-              </div>
-              <p>
-                基于 Rust Trait 设计统一工具协议，覆盖工具注册、参数解析、执行反馈、异常处理和状态恢复；根据任务复杂度、上下文规模与工具反馈动态选择模型。
-              </p>
-              <div class="tag-list" aria-label="技术关键词">
-                <span>Rust</span><span>MCP</span><span>Model Routing</span><span>State Management</span>
-              </div>
-            </article>
-
-            <article class="timeline-item">
-              <div class="entry-heading">
-                <div>
                   <p class="entry-label">TEACHING</p>
                   <h3>《工程实践中的线性代数》教材与课程建设</h3>
                 </div>
@@ -230,6 +163,22 @@
         <section class="section" id="experience" aria-labelledby="experience-title">
           <h2 class="section-title" id="experience-title">实习经历 <span>Experience</span></h2>
           <div class="section-body timeline">
+            <article class="timeline-item experience-entry">
+              <div class="experience-logo placeholder-logo" aria-hidden="true">
+                <i data-lucide="flask-conical" aria-hidden="true"></i>
+              </div>
+              <div class="experience-copy">
+                <div class="entry-heading">
+                  <div>
+                    <p class="entry-label">RESEARCH INTERN</p>
+                    <h3>上海交通大学 · 易冉副教授实验室</h3>
+                  </div>
+                  <time>目前</time>
+                </div>
+                <p>目前在上海交通大学易冉副教授实验室开展科研实习。</p>
+              </div>
+            </article>
+
             <article class="timeline-item experience-entry">
               <div class="experience-logo placeholder-logo" title="机构 Logo 待补充">
                 <i data-lucide="building-2" aria-hidden="true"></i>
@@ -302,24 +251,6 @@
                 </div>
               </div>
             </article>
-          </div>
-        </section>
-
-        <section class="section" id="skills" aria-labelledby="skills-title">
-          <h2 class="section-title" id="skills-title">技术能力 <span>Skills</span></h2>
-          <div class="section-body skill-groups">
-            <div class="skill-row">
-              <h3>Agent & Systems</h3>
-              <p>Rust Trait、MCP、工具调用、状态管理、自适应模型路由</p>
-            </div>
-            <div class="skill-row">
-              <h3>Vision & AI</h3>
-              <p>Jittor、RetinaNet、YOLOv5、OpenCV、MediaPipe、Halcon</p>
-            </div>
-            <div class="skill-row">
-              <h3>Product Engineering</h3>
-              <p>Python、Qt、Godot 4、GDScript、UDP Socket、LaTeX</p>
-            </div>
           </div>
         </section>
 
