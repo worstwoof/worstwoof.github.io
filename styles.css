@@ -315,6 +315,7 @@ svg {
 
 .social-icons a {
   color: var(--text);
+  border-color: var(--line-strong);
   transition: color 160ms ease, border-color 160ms ease, transform 160ms ease;
 }
 
@@ -327,6 +328,7 @@ svg {
 .social-icons svg {
   width: 17px;
   height: 17px;
+  stroke-width: 2.4;
 }
 
 .content {
@@ -650,7 +652,7 @@ html.reveal-ready .section.visible {
 }
 
 .publication-links a,
-.publication-link-placeholder {
+.publication-doi {
   display: inline-flex;
   align-items: center;
   gap: 5px;
@@ -662,12 +664,12 @@ html.reveal-ready .section.visible {
   color: var(--link);
 }
 
-.publication-link-placeholder {
-  color: var(--placeholder);
+.publication-doi {
+  color: var(--muted);
 }
 
 .publication-links a svg,
-.publication-link-placeholder svg {
+.publication-doi svg {
   flex: 0 0 auto;
   width: 13px;
   height: 13px;

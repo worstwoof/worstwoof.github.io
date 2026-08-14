@@ -15,6 +15,4 @@
 
 ## 待补充资料
 
-- 论文 PDF、NutriSight DOI 与代码链接
-- Cyber Smash 仓库与掌间流明 Bilibili 视频链接
 - 山东省产业技术研究院 Logo
