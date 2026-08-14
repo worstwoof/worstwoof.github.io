@@ -123,25 +123,7 @@ svg {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-
-.home-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 11px;
-  color: var(--text);
-  font-weight: 700;
-}
-
-.home-mark {
-  display: grid;
-  place-items: center;
-  width: 34px;
-  height: 34px;
-  color: #ffffff;
-  background: var(--accent);
-  font: 600 12px/1 "IBM Plex Mono", monospace;
+  justify-content: flex-end;
 }
 
 .nav-right,
@@ -822,10 +804,6 @@ html.reveal-ready .section.visible {
 }
 
 @media (max-width: 420px) {
-  .home-link > span:last-child {
-    display: none;
-  }
-
   .experience-entry {
     grid-template-columns: 42px 1fr;
     gap: 12px;
