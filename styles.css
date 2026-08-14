@@ -385,23 +385,10 @@ html.reveal-ready .section.visible {
   color: var(--text);
 }
 
-.inline-placeholder,
 .section-note {
   color: var(--placeholder);
 }
 
-.inline-placeholder {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  margin-top: 9px;
-  padding: 9px 12px;
-  border: 1px dashed color-mix(in srgb, var(--placeholder) 48%, var(--line));
-  border-radius: 5px;
-  font-size: 13px;
-}
-
-.inline-placeholder svg,
 .section-note svg {
   flex: 0 0 auto;
   width: 16px;
@@ -662,15 +649,24 @@ html.reveal-ready .section.visible {
   margin-top: 13px;
 }
 
+.publication-links a,
 .publication-link-placeholder {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  color: var(--placeholder);
   font-size: 11px;
   font-weight: 600;
 }
 
+.publication-links a {
+  color: var(--link);
+}
+
+.publication-link-placeholder {
+  color: var(--placeholder);
+}
+
+.publication-links a svg,
 .publication-link-placeholder svg {
   flex: 0 0 auto;
   width: 13px;
@@ -826,10 +822,6 @@ html.reveal-ready .section.visible {
 @media (max-width: 420px) {
   .home-link > span:last-child {
     display: none;
-  }
-
-  .inline-placeholder {
-    align-items: flex-start;
   }
 
   .experience-entry {
