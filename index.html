@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="styles.css?v=20260814-resources" />
     <script>
       document.documentElement.dataset.theme = localStorage.getItem('theme') || 'light';
+      document.documentElement.dataset.language = localStorage.getItem('language') === 'en' ? 'en' : 'zh';
     </script>
     <title>黄子豪 | Academic Homepage</title>
   </head>
@@ -43,6 +44,9 @@
             <a href="#publications">论文</a>
             <a href="#awards">荣誉</a>
           </div>
+          <button class="language-toggle" type="button" data-language-toggle title="切换到英文" aria-label="切换到英文">
+            <span data-language-label>EN</span>
+          </button>
           <button class="theme-toggle" type="button" data-theme-toggle title="切换颜色模式" aria-label="切换颜色模式">
             <i data-lucide="moon" aria-hidden="true"></i>
           </button>

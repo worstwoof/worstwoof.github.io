@@ -170,6 +170,27 @@ svg {
   transform: scaleX(1);
 }
 
+.language-toggle {
+  display: inline-grid;
+  place-items: center;
+  min-width: 42px;
+  height: 32px;
+  padding: 0 9px;
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--surface);
+  cursor: pointer;
+  font: 600 11px/1 "IBM Plex Mono", monospace;
+  transition: color 160ms ease, border-color 160ms ease, transform 160ms ease;
+}
+
+.language-toggle:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
 .theme-toggle {
   display: grid;
   place-items: center;
